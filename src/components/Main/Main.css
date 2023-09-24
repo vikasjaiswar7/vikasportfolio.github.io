@@ -1,0 +1,90 @@
+#main {
+  min-height: 80vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+
+.main-title {
+  font-size: 50px;
+  color: #42446e;
+}
+
+/* 
+.name {
+  background: #13b0f5;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #13b0f5 42%,
+    #e70faa 100%
+  );
+  background: -moz-linear-gradient(to bottom right, #13b0f5 42%, #e70faa 100%);
+  background: linear-gradient(to bottom right, #13b0f5 42%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.changing-text {
+  background: #13b0f5;
+  background: -webkit-linear-gradient(to bottom right,
+      #13b0f5 42%,
+      #e70faa 100%);
+  background: -moz-linear-gradient(to bottom right, #13b0f5 42%, #e70faa 100%);
+  background: linear-gradient(to bottom right, #13b0f5 42%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main img {
+  width: 349px;
+  border-radius: 200px;
+}
+
+@media (width<870px) {
+  .main {
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 50px;
+    min-height: 100vh;
+    margin-bottom: 200px;
+  }
+
+  .main-title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .main img {
+    width: 300px;
+  }
+}
+
+@media (width<1225px) {
+  .main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (width<540px) {
+  .main {
+    margin-top: 10px;
+    gap: 1rem;
+  }
+
+  .main img {
+    width: 220px;
+  }
+
+  .main-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
